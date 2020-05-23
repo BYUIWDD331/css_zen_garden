@@ -1,0 +1,208 @@
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #4d5359; // Davy's Grey
+$color-2: #4b4e6d; // Independence
+$color-3: #a5d8ff; // Uranian Blue
+$color-4: #c3dfe0; // Powder Blue
+$color-5: #bcd979; // Yellow-Green (Crayola)
+$color-6: #79c99e; // Eton BLue
+$color-7: #4a4238; // Dark Lava
+$color-8: #493548; // English Violet
+$color-9: #b56576; // Cinnamon Satin
+$color-10: white; // White
+
+// additional colors
+
+$success: $color-6; // green
+$alert: $color-9; // red
+
+/* xColor section - basic style */
+
+.cd-colors {
+
+	li {
+		text-align: center;
+		@include column(.48);
+		margin: 0 4% 1em 0;
+
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
+	}
+
+	.cd-color-swatch {
+		position: relative;
+		width: 100%;
+		padding: 50% 0;
+
+		&::before, &::after {
+			/* lighter and darker color shades of the same swatch */
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 50%;
+			height: 20%;
+		}
+
+		&::before {
+			left: 0;
+		}
+
+		&::after {
+			right: 0;
+		}
+	}
+
+	b {
+		display: block;
+		padding: .6em 0;
+	}
+
+	li:nth-of-type(1) .cd-color-swatch {
+		background: $color-1;
+
+		&::before {
+			background: lighten($color-1, 5%);
+		}
+
+		&::after {
+			background: darken($color-1, 5%);
+		}
+	}
+
+	li:nth-of-type(2) .cd-color-swatch {
+		background: $color-2;
+
+		&::before {
+			background: lighten($color-2, 5%);
+		}
+
+		&::after {
+			background: darken($color-2, 5%);
+		}
+	}
+
+	li:nth-of-type(3) .cd-color-swatch {
+		background: $color-3;
+
+		&::before {
+			background: lighten($color-3, 5%);
+		}
+
+		&::after {
+			background: darken($color-3, 5%);
+		}
+	}
+
+	li:nth-of-type(4) .cd-color-swatch {
+		background: $color-4;
+
+		&::before {
+			background: lighten($color-4, 5%);
+		}
+
+		&::after {
+			background: darken($color-4, 5%);
+		}
+	}
+
+	li:nth-of-type(5) .cd-color-swatch {
+		background: $color-5;
+
+		&::before {
+			background: lighten($color-5, 5%);
+		}
+
+		&::after {
+			background: darken($color-5, 5%);
+		}
+	}
+
+	li:nth-of-type(6) .cd-color-swatch {
+		background: $color-6;
+
+		&::before {
+			background: lighten($color-6, 5%);
+		}
+
+		&::after {
+			background: darken($color-6, 5%);
+		}
+	}
+
+	li:nth-of-type(7) .cd-color-swatch {
+		background: $color-7;
+
+		&::before {
+			background: lighten($color-7, 5%);
+		}
+
+		&::after {
+			background: darken($color-7, 5%);
+		}
+	}
+
+	li:nth-of-type(8) .cd-color-swatch {
+		background: $color-8;
+
+		&::before {
+			background: lighten($color-8, 5%);
+		}
+
+		&::after {
+			background: darken($color-8, 5%);
+		}
+	}
+
+	li:nth-of-type(9) .cd-color-swatch {
+		background: $color-9;
+
+		&::before {
+			background: lighten($color-9, 5%);
+		}
+
+		&::after {
+			background: darken($color-9, 5%);
+		}
+	}
+
+	li:nth-of-type(10) .cd-color-swatch {
+		background: $color-10;
+
+		&::before {
+			background: lighten($color-10, 5%);
+		}
+
+		&::after {
+			background: darken($color-10, 5%);
+		}
+	}
+
+	@include MQ(S) {
+		li {
+			@include column(.19);
+			margin: 0 1.25% 1em 0;
+
+			&:nth-of-type(2n) {
+				margin-right: 1.25%;
+			}
+
+			&:nth-of-type(5n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.cd-typography .cd-box,
+.cd-buttons .cd-box,
+.cd-icons .cd-box,
+.cd-form .cd-box {
+	padding: 1em;
+
+	@include MQ(S) {
+		.cd-box {
+			padding: 2em;
+		}
+	} 
+}
