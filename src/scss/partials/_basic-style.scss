@@ -384,6 +384,6 @@ main > h1 {
   
 	@include MQ(L) {
 	  /* title goes into the header on big devices */
-	  color: $color-5;
+	  color: darken($color-2, 12%);
 	}
   }
