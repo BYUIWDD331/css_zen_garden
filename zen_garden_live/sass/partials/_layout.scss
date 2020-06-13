@@ -1,17 +1,75 @@
-* {
-    border: 1px solid black;
-}
+* {}
+
 .page-wrapper {
-    border-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.intro {}
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-.summary {}
+.intro::before {
+    content: "";
+    width: 40%;
+    height: 60vw;
+    background-image: url("https://placekitten.com/200/200");
+}
 
-.preamble {}
+header {
+    border: 1px solid black;
+    width: 49%;
+    height: 20vw;
+}
 
-.main {}
+header h1 {
+    font-size: 6vw;
+}
+
+header h2 {
+    text-align: right;
+    font-size: 3vw;
+}
+
+.summary p {
+    border: 1px solid black;
+    width: 49%;
+}
+
+.preamble {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.main,
+.preamble {
+    order: 2;
+
+    div {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    h3::before {
+        content: "";
+        display: inline-block;
+        width: 10vw;
+        height: 10vw;
+        background-image: url("https://placekitten.com/100/100");
+        margin-right: 2rem;
+        margin-left: .5rem;
+    }
+}
+
+.sidebar { 
+    border: 1px solid black;
+    width: 100%;
+}
 
 .supporting {}
 
@@ -32,8 +90,6 @@
 .zen-accessibility {}
 
 .zen-github {}
-
-.sidebar {}
 
 .wrapper {}
 
