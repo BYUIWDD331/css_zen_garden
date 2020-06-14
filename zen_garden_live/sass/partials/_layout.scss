@@ -18,7 +18,11 @@
     content: "";
     width: 40%;
     height: auto;
-    background-image: url("https://placekitten.com/200/200");
+    background: url("https://placekitten.com/200/200")no-repeat top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
@@ -59,7 +63,11 @@ header h2 {
         display: inline-block;
         width: 10vw;
         height: 10vw;
-        background-image: url("https://placekitten.com/100/100");
+        background: url("https://placekitten.com/100/100") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         margin-right: 2rem;
         margin-left: .5rem;
     }
