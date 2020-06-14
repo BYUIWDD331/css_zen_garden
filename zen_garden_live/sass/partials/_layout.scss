@@ -17,7 +17,7 @@
 .intro::before {
     content: "";
     width: 40%;
-    height: 60vw;
+    height: auto;
     background-image: url("https://placekitten.com/200/200");
 }
 
@@ -38,7 +38,7 @@ header h2 {
 
 .summary p {
     border: 1px solid black;
-    width: 49%;
+    width: 100%;
 }
 
 .preamble {
