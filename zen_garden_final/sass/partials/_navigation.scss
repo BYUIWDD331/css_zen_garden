@@ -7,7 +7,10 @@ aside h3 {
 }
 
 .sidebar {
-    border: 0;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 2rem;
+    min-height: 470px;
 }
 
 ul {
@@ -20,41 +23,40 @@ li {
 }
 
 a {
-    color: #2F56B0;
+    color: $color-6;
     position: relative;
     text-decoration: none;
-    transition: color .4s ease-out;
+    transition: color 1s ease-out;
 }
 
 a:hover {
-    font-size: 1.3em;
-    color: #457DFB;
+    color: $color-3;
     right: 0;
     text-decoration: none;
 }
 
-a:hover:after {
-    border-color: #457DFB;
+a:hover::after {
+    border-color: $color-3;
     right: 0;
 }
 
-a:after {
+a::after {
     border-radius: 1em;
-    border-top: .1em solid #2F56B0;
+    border-top: .1em solid $color-6;
     content: "";
     position: absolute;
     right: 100%;
     bottom: -.20em;
     left: 0;
-    transition: right .4s cubic-bezier(0, .5, 0, 1),
-        border-color .4s ease-out;
+    transition: right 1s cubic-bezier(0, .5, 0, 1),
+        border-color 1s ease-out;
 }
 
 a:hover:after {
     right: 0;
 }
 
-.wrapper h3::before {
+/*.wrapper h3::before {
     content: "";
     display: inline-block;
     background-image: url(https://i.postimg.cc/rFnyCRjy/pajaro.gif);
@@ -69,7 +71,6 @@ a:hover:after {
     animation-duration: 10s;
     animation-delay: -1s;
 }
-
 
 @keyframes fly-cycle {
     0% {
@@ -93,4 +94,4 @@ a:hover:after {
 
     
 
-}
+} */

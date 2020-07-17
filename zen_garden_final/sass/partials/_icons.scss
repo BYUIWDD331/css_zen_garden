@@ -1,0 +1,139 @@
+.intro::before {
+    content: "";
+    width: 40%;
+    height: auto;
+    background: url("/img/icons/bird.svg")no-repeat top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main,
+.preamble {
+
+    div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    h3::before {
+        content: "";
+        display: inline-block;
+        width: 10vw;
+        height: 10vw;
+        background: url("/img/icons/bird_nocolor.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-right: 2rem;
+        margin-left: .5rem;
+        transition: all 1s ease-in-out;
+    }
+
+    h3:hover::before {
+        background: url("/img/icons/bird_inverse.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+
+    .zen-validate-html {
+        visibility: hidden;
+        font-size: 0px;
+        margin-right: .4rem;
+    }
+
+    .zen-validate-html::before {
+        visibility: visible;
+        content: "";
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background: url("/img/icons/html5.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .zen-validate-css {
+        visibility: hidden;
+        font-size: 0px;
+        margin-right: .6rem;
+    }
+
+    .zen-validate-css::before {
+        visibility: visible;
+        content: "";
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background: url("/img/icons/css.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .zen-license {
+        visibility: hidden;
+        font-size: 0px;
+        margin-right: .3rem;
+    }
+
+    .zen-license::before {
+        visibility: visible;
+        content: "";
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background: url("/img/icons/license.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .zen-accessibility {
+        visibility: hidden;
+        font-size: 0px;
+    }
+
+    .zen-accessibility::before {
+        visibility: visible;
+        content: "";
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background: url("/img/icons/disability.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .zen-github {
+        visibility: hidden;
+        font-size: 0px;
+    }
+
+    .zen-github::before {
+        visibility: visible;
+        content: "";
+        display: inline-block;
+        width: 5vw;
+        height: 5vw;
+        background: url("/img/icons/github.svg") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
