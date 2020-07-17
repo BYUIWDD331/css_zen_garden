@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .intro {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .intro::before {
   content: "";
@@ -20,40 +18,33 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-}
+  background-size: cover; }
 
 header {
   border: 1px solid black;
   width: 49%;
-  height: 20vw;
-}
+  height: 20vw; }
 
 header h1 {
-  font-size: 6vw;
-}
+  font-size: 6vw; }
 
 header h2 {
   text-align: right;
-  font-size: 3vw;
-}
+  font-size: 3vw; }
 
 .summary p {
   border: 1px solid black;
-  width: 100%;
-}
+  width: 100%; }
 
 .preamble {
   border: 1px solid black;
-  width: 100%;
-}
+  width: 100%; }
 
 .main div,
 .preamble div {
   border: 1px solid black;
   width: 100%;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 .main h3::before,
 .preamble h3::before {
   content: "";
@@ -66,67 +57,55 @@ header h2 {
   -o-background-size: cover;
   background-size: cover;
   margin-right: 2rem;
-  margin-left: 0.5rem;
-}
+  margin-left: .5rem; }
 
 footer {
   position: relative;
-  top: 490px;
-}
+  top: 490px; }
 
 .sidebar {
   border: 1px solid black;
   width: 100%;
   margin-bottom: 2rem;
-  min-height: 470px;
-}
+  min-height: 470px; }
 
 .design-name {
-  /* 8 of these */
-}
+  /* 8 of these */ }
 
 .designer-name {
-  /* 8 of these too */
-}
+  /* 8 of these too */ }
 
 /* do not use the following divs! use ::before and ::after! */
 @media only screen and (min-width: 50em) {
   body {
     width: 80%;
-    margin: auto;
-  }
+    margin: auto; }
 
   .page-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-  }
+    width: 90%; }
 
   header {
-    height: auto;
-  }
+    height: auto; }
 
   .summary p {
-    width: 44%;
-  }
+    width: 44%; }
 
   .intro::before {
     content: "";
     width: 40%;
     height: auto;
-    background-image: url("https://placekitten.com/200/200");
-  }
+    background-image: url("https://placekitten.com/200/200"); }
 
   .preamble, .summary {
     position: relative;
-    width: 97.5%;
-  }
+    width: 97.5%; }
 
   .main {
     position: relative;
     left: 0;
-    width: 70%;
-  }
+    width: 70%; }
 
   .sidebar {
     position: relative;
@@ -134,17 +113,84 @@ footer {
     padding: 20px;
     right: 0;
     width: 20%;
-    margin-bottom: 0;
-  }
+    margin-bottom: 0; }
 
   div {
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
 
   footer {
     margin-top: 20px;
-    position: static;
-  }
-}
+    position: static; } }
+aside {
+  text-align: right; }
+
+aside h3 {
+  text-align: center; }
+
+.sidebar {
+  border: 0; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+li {
+  padding: .5em; }
+
+a {
+  color: #2F56B0;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out; }
+
+a:hover {
+  font-size: 1.3em;
+  color: #457DFB;
+  right: 0;
+  text-decoration: none; }
+
+a:hover:after {
+  border-color: #457DFB;
+  right: 0; }
+
+a:after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -.20em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out; }
+
+a:hover:after {
+  right: 0; }
+
+.wrapper h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://i.postimg.cc/rFnyCRjy/pajaro.gif);
+  background-size: auto 100%;
+  width: 50px;
+  height: 50px;
+  will-change: background-position;
+  animation-name: fly-cycle;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: -1s; }
+
+@keyframes fly-cycle {
+  0% {
+    transform: translate(0, 0) scaleX(-1); }
+  10% {
+    transform: translate(0, 0) scaleX(-1); }
+  40% {
+    transform: translate(350%, 0%); }
+  60% {
+    transform: translate(350%, 0%); }
+  100% {
+    transform: translate(0, 0) scaleX(-1); } }
+footer a {
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
