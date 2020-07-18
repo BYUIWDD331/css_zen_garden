@@ -1,1 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap");
+div {
+  background-color: #bcd979;
+}
 
+html {
+  background-color: #a5d8ff;
+}
+
+.sidebar,
+.preamble {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+a {
+  color: #b56576;
+}
+
+a::after {
+  border-top: 0.1em solid #b56576;
+}
+
+a:hover {
+  text-shadow: 1px 1px #b56576;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4a4238;
+}
+
+p {
+  color: #493548;
+}
+
+div {
+  padding: 0.5rem;
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+  display: none;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+header {
+  width: 49%;
+  height: 20vw;
+}
+
+header h1 {
+  font-size: 6vw;
+}
+
+header h2 {
+  text-align: right;
+  font-size: 3vw;
+}
+
+.summary p {
+  width: 100%;
+}
+
+.preamble {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+footer {
+  position: relative;
+  top: 860px;
+}
+
+.design-name {
+  /* 8 of these */
+}
+
+.designer-name {
+  /* 8 of these too */
+}
+
+/* do not use the following divs! use ::before and ::after! */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dancing Script", cursive;
+}
+
+.intro::before {
+  content: "";
+  width: 40%;
+  height: auto;
+  background: url("/img/icons/bird.svg") no-repeat top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main div,
+.preamble div {
+  width: 100%;
+  margin-top: 1rem;
+}
+.main h3::before,
+.preamble h3::before {
+  content: "";
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  background: url("/img/icons/bird_nocolor.svg") no-repeat center;
+  filter: invert(24%) sepia(6%) saturate(1469%) hue-rotate(353deg) brightness(90%) contrast(86%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 2rem;
+  margin-left: 0.5rem;
+  transition: all 1s ease-in-out;
+}
+.main h3:hover::before,
+.preamble h3:hover::before {
+  background: url("/img/icons/bird_inverse.svg") no-repeat center;
+  filter: invert(24%) sepia(6%) saturate(1469%) hue-rotate(353deg) brightness(90%) contrast(86%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transform: rotate(360deg);
+}
+
+footer {
+  filter: invert(24%) sepia(6%) saturate(1469%) hue-rotate(353deg) brightness(90%) contrast(86%);
+}
+footer .zen-validate-html {
+  visibility: hidden;
+  font-size: 0px;
+  margin-right: 0.4rem;
+}
+footer .zen-validate-html::before {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: url("/img/icons/html5.svg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer .zen-validate-css {
+  visibility: hidden;
+  font-size: 0px;
+  margin-right: 0.6rem;
+}
+footer .zen-validate-css::before {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: url("/img/icons/css.svg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer .zen-license {
+  visibility: hidden;
+  font-size: 0px;
+  margin-right: 0.3rem;
+}
+footer .zen-license::before {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: url("/img/icons/license.svg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer .zen-accessibility {
+  visibility: hidden;
+  font-size: 0px;
+}
+footer .zen-accessibility::before {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: url("/img/icons/disability.svg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer .zen-github {
+  visibility: hidden;
+  font-size: 0px;
+}
+footer .zen-github::before {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: url("/img/icons/github.svg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+aside {
+  text-align: center;
+}
+
+aside h3 {
+  text-align: center;
+}
+
+.sidebar {
+  width: 100%;
+  margin-bottom: 2rem;
+  min-height: 470px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 0.5em;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover::after {
+  right: 0;
+}
+
+a::after {
+  border-radius: 1em;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -0.2em;
+  left: 0;
+  transition: right 1s cubic-bezier(0, 0.5, 0, 1), border-color 1s ease-out;
+}
+
+a:hover:after {
+  right: 0;
+}
+
+/*.wrapper h3::before {
+    content: "";
+    display: inline-block;
+    background-image: url(https://i.postimg.cc/rFnyCRjy/pajaro.gif);
+    background-size: auto 100%;
+    width: 50px;
+    height: 50px;
+    will-change: background-position;
+
+    animation-name: fly-cycle;
+    animation-iteration-count: infinite;
+
+    animation-duration: 10s;
+    animation-delay: -1s;
+}
+
+@keyframes fly-cycle {
+    0% {
+        transform: translate(0, 0) scaleX(-1);
+    }
+    10% {
+        transform: translate(0, 0) scaleX(-1) ;
+    }
+
+
+    40% {
+        transform: translate(350%, 0%);
+    }
+
+    60% {
+        transform: translate(350%, 0%);
+    }
+   100% {
+        transform: translate(0, 0) scaleX(-1);
+    }
+
+
+
+} */
+@media only screen and (min-width: 50em) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+
+  .page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .summary p {
+    width: 44%;
+  }
+
+  .intro::before {
+    content: "";
+    width: 45%;
+    height: auto;
+  }
+
+  .preamble, .summary {
+    position: relative;
+    width: 97.5%;
+  }
+
+  .main {
+    position: relative;
+    left: 0;
+    width: 70%;
+  }
+
+  .sidebar {
+    position: relative;
+    margin-top: 40px;
+    padding: 20px;
+    right: 0;
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  div {
+    margin-top: 20px;
+  }
+
+  footer {
+    margin-top: 20px;
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
