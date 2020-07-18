@@ -93,15 +93,6 @@ footer {
   top: 860px;
 }
 
-.design-name {
-  /* 8 of these */
-}
-
-.designer-name {
-  /* 8 of these too */
-}
-
-/* do not use the following divs! use ::before and ::after! */
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -292,45 +283,6 @@ a:hover:after {
   right: 0;
 }
 
-/*.wrapper h3::before {
-    content: "";
-    display: inline-block;
-    background-image: url(https://i.postimg.cc/rFnyCRjy/pajaro.gif);
-    background-size: auto 100%;
-    width: 50px;
-    height: 50px;
-    will-change: background-position;
-
-    animation-name: fly-cycle;
-    animation-iteration-count: infinite;
-
-    animation-duration: 10s;
-    animation-delay: -1s;
-}
-
-@keyframes fly-cycle {
-    0% {
-        transform: translate(0, 0) scaleX(-1);
-    }
-    10% {
-        transform: translate(0, 0) scaleX(-1) ;
-    }
-
-
-    40% {
-        transform: translate(350%, 0%);
-    }
-
-    60% {
-        transform: translate(350%, 0%);
-    }
-   100% {
-        transform: translate(0, 0) scaleX(-1);
-    }
-
-
-
-} */
 @media only screen and (min-width: 50em) {
   body {
     width: 80%;
@@ -386,5 +338,3 @@ a:hover:after {
     position: static;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
