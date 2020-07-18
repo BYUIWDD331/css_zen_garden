@@ -21,7 +21,8 @@ html {
 }
 .sidebar,
 .preamble {
-    border: 1px solid white;
+    border: 1px solid $color-10;
+    border-radius: 20px;
 }
 
 a {
@@ -34,7 +35,7 @@ a::after {
 
 a:hover {
 	text-shadow: 1px 1px $color-9;
-    color: white;
+    color: $color-10;
 }
 
 h1,
