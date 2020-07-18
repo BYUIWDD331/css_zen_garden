@@ -9,3 +9,43 @@ $color-7: #4a4238; // Dark Lava
 $color-8: #493548; // English Violet
 $color-9: #b56576; // Cinnamon Satin
 $color-10: white; // White
+
+
+div {
+    background-color: $color-5;
+    //opacity: .7;
+}
+html {
+    //background: url("/img/raster/bird.PNG") no-repeat center;
+    background-color: $color-3;
+}
+.sidebar,
+.preamble {
+    border: 1px solid white;
+}
+
+a {
+    color: $color-9;
+}
+
+a::after {
+    border-top: .1em solid $color-9;
+}
+
+a:hover {
+	text-shadow: 1px 1px $color-9;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-7;
+}
+
+p {
+    color: $color-8
+}

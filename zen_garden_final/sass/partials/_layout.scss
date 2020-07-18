@@ -1,10 +1,23 @@
 * {}
 
+div {
+    padding: .5rem;
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6 {
+    display: none;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
 }
 
 .intro {
@@ -34,13 +47,12 @@ header h2 {
 
 .preamble {
     width: 100%;
-    border: 1px solid black;
     padding: .5rem;
 }
 
 footer {
     position: relative;
-    top: 770px;
+    top: 860px;
 }
 
 
